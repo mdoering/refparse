@@ -7,7 +7,7 @@
 
     <groupId>de.uka.ipd</groupId>
     <artifactId>refparse</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>Idaho Ref Parse library</name>
 
@@ -17,6 +17,7 @@
         <jdkLevel>1.8</jdkLevel>
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
         <project.reporting.outputEncoding>ISO-8859-1</project.reporting.outputEncoding>
+        <idaho.version>1.0.1-SNAPSHOT</idaho.version>
     </properties>
 
     <repositories>
@@ -45,7 +46,7 @@
         <dependency>
             <groupId>de.uka.ipd</groupId>
             <artifactId>idaho-core</artifactId>
-            <version>1.0.0</version>
+            <version>${idaho.version}</version>
         </dependency>
         <dependency>
             <groupId>de.uka.ipd</groupId>
@@ -86,9 +87,6 @@
                         <requireJavaVersion>
                             <version>[${jdkLevel},)</version>
                         </requireJavaVersion>
-                        <requireReleaseDeps>
-                            <message>No Snapshot dependencies allowed!</message>
-                        </requireReleaseDeps>
                     </rules>
                 </configuration>
             </plugin>
